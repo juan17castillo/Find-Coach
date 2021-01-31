@@ -45,8 +45,6 @@ export default {
       });
 
       this.$router.replace('/coaches');
-      console.log(this.email);
-      console.log(this.message);
     },
   },
 };
