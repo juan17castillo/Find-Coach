@@ -12,6 +12,21 @@ export default {
   components: {
     TheHeader,
   },
+  computed: {
+    didAutologout() {
+      return this.$store.getters.didAutologout;
+    }
+  },
+  watch:{
+    didAutologout(curValue, oldValue) {
+      if (curValue && curValue !== oldValue) {
+        this.$router.replace('/coaches');
+      }
+    }
+  },
+  created() {
+    this.$store.dispatch('tryLogin');
+  }
 };
 </script>
 <style>

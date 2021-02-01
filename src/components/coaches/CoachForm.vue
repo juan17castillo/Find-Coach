@@ -77,7 +77,7 @@
       </div>
     </div>
     <div>
-      <p v-if="!formisValid">Please fix the above errors and submit again.</p>
+      <p v-if="!formIsValid">Please fix the above errors and submit again.</p>
       <base-button>Register</base-button>
     </div>
   </form>
